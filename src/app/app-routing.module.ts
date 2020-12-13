@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FormPaymentComponent } from 'src/app/form-payment/form-payment.component';
 
-const routes: Routes = [];
+// Routing
+const routes: Routes = [
+  {
+    path: 'payment-form',
+    component: FormPaymentComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
